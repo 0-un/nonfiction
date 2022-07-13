@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 토글 메뉴 및 캐러셀 구현을 위한 제이쿼리 플러그인 스크립트 소스 연결 -->
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <!-- 캐러셀을 적용하기 위한 스타일 -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!-- 캐러셀을 적용하기 위한 스크립트 -->
+    <script src="./js/jquery.bxslider.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- top -->
+    <div id="gototop">
+        <a href="#top">
+            <img src="./images/full_logo.svg" alt="">
+        </a>
+    </div>
+
+
+    <header>
+        <nav>
+            <div id="top_menu">
+                <a href="#" class="toggle" onclick="ShowMenu()">
+                    <img src="./images/hamburger.png" alt="toggle">
+                </a>
+                <a href="#" class="logo">
+                    <img src="./images/half_logo.png" alt="logo">
+                </a>
+                <a href="#" class="cart">
+                    <img src="./images/cart.png" alt="cart">
+                </a>
+
+            </div>
+            <div id="pc_menu">
+                <div id="toggle_box">
+                    <a href="#" class="toggle" onclick="ShowMenu()">
+                        <img src="./images/hamburger.png" alt="toggle">
+                    </a>
+                    <div id="search_box">
+                        <div class="search">
+                            <p>SEARCH</p>
+                            <img src="./images/search.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="pc_logo">
+                    <a href="#" class="logo">
+                        <img src="./images/half_logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="login">
+                    <ul>
+                        <li><a>LOGIN</a></li>
+                        <li><a>ENG</a></li>
+                        <li><a>CART(0)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- slide menu -->
+            <div id="slide">
+                <div id="mainmenu_top">
+                    <a href="#" class="top_close" onclick="HideMenu()">
+                        <img src="./images/close.png" alt="">
+                    </a>
+                    <p>NONFICTION</p>
+                    <a href="#" class="top_logo">
+                        <img src="./images/half_logo.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <div class="pc_slide">
+                        <li id="click_menu" class="main_menu">
+                            <a href="#">SHOP</a>
+                            <a href="#" class="plus">
+                                <img src="./images/plus.png " alt="">
+                            </a>
+                        </li>
+                        <!-- sub menu1 -->
+                        <div class="sub_menu1">
+                            <li>
+                                <a href="#">SHOP ALL</a>
+                            </li>
+                            <li>
+                                <a href="#">BEST SELLER</a>
+                            </li>
+                            <li>
+                                <a href="#">PERFUME</a>
+                            </li>
+                            <li>
+                                <a href="#">BODY CARE</a>
+                            </li>
+                            <li>
+                                <a href="#">HAND CARE</a>
+                            </li>
+                            <li>
+                                <a href="#">LIP CARE</a>
+                            </li>
+                            <li>
+                                <a href="#">HOME OBJECTS</a>
+                            </li>
+                            <li>
+                                <a href="#">GIFT SET</a>
+                            </li>
+                            <li>
+                                <a href="#">ACC</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="pc_slide">
+                        <li id="click_menu2" class="main_menu">
+                            <a href="#">ABOUT</a>
+                            <a href="#" class="plus">
+                                <img src="./images/plus.png " alt="">
+                            </a>
+                        </li class="main_menu">
+                        <!-- sub menu2 -->
+                        <div class="sub_menu2">
+                            <li>
+                                <a href="#">OUR STORY</a>
+                            </li>
+                            <li>
+                                <a href="#">PRESS</a>
+                            </li>
+                            <li>
+                                <a href="#">CAMPAIGN</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="pc_slide">
+                        <li class="main_menu"><a href="#">STORES</a></li>
+                    </div>
+                    <div class="pc_slide">
+                        <li class="main_menu"><a href="#">CONTACT</a></li>
+                    </div>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="mainpage">
+        <div class="wrapper">
+            <div class="bxslider">
+                <div><img src="./images/caresel1.jpg" alt="carousel image1"></div>
+                <div><img src="./images/caresel2.jpg" alt="carousel image2"></div>
+                <div><img src="./images/caresel3.jpg" alt="carousel image3"></div>
+            </div>
+        </div>
+    </section>
+    <section id="product">
+        <div class="wrapper">
+            <h3>Our Products</h3>
+            <p class="main_text">
+                논픽션 : 우리가 믿고 지키는 것</br>
+                Quality of Product: What We Believe
+            </p>
+            <div class="main_content">
+                <div class="main_img">
+                    <img src="./images/content1.jpg" alt="">
+                </div>
+                <div class="flex_text">
+                    <p class="main_text">
+                        깨끗하고 건강한<br>
+                        모든 제품은 설페이트, 파라벤, 프탈레이트 등 17가지 유해성분을 첨가하지 않은 클린 포뮬러로 민감한 피부에도 안심하고 사용할 수 있습니다.
+                    </p>
+                    <p class="main_text">
+                        Clean ingredients<br>
+                        All our products’ ingredients are clean. We have eliminated 17 harmful ingredients such as
+                        sulphate, paraben and phthalate, from our formulas. It is safe on sensitive skin.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="main_content">
+                <div class="main_img">
+                    <img src="./images/content2.jpg" alt="">
+                </div>
+                <div class="flex_text">
+                    <p class="main_text">
+                        효과적인 기능과 제품력<br>
+                        논픽션은 제품 개발에 쏟는 정성과 품질에 타협하지 않습니다. 방부제를 덜 쓰고 최고급 식물성 원료를 사용해 신뢰할 수 있으며 동시에 사용감이 우수한 효과적인 제품을
+                        만듭니다.
+                    </p>
+                    <p class="main_text">
+                        Effective<br>
+                        Nonfiction does not compromise the quality and dedication to product development. It uses less
+                        preservatives and uses the finest vegetable raw materials to create an effective, reliable and
+                        comfortable product.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div id="m_logo">
+        <img src="./images/full_logo.svg" alt="full_logo">
+    </div>
+
+    <section id="origin">
+        <img src="./images/content3.jpg" alt="" class="sub_img">
+        <div class="wrapper">
+            <div id="right">
+                <h3>Origin of LOVE</h3>
+                <p class="main_text">
+                    논픽션의 향기로 전하는 특별한 사랑의 언어<br>
+                    The special language of love delivered through the scent of non-fiction.
+                </p>
+            </div>
+
+            <div id="left">
+                <div class="left_img">
+                    <img src="./images/content4.jpg" alt="">
+                </div>
+                <p class="main_text">
+                    연인과 친구, 그리고 모든 소중한 이들과 만들어가는 관계와 사랑의 모습이
+                    다양하듯, 논픽션의 6가지 시그니처 향 속에는 저마다의 고유한 스토리와
+                    이미지, 무드가 담겨 있습니다.
+
+                </p>
+                <p class="main_text">
+                    Just as the relationship and love you make with your lover, friends, and all your precious people
+                    are diverse, <br>
+                    Nonfiction's six signature scents contain their own stories, images, and moods.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="f_content">
+            <div class="f_menu">
+                <h2>CUSTOMER SERVICE</h2>
+                <div class="icon_text1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+                    </svg>
+                    <h3> 1666-7891</h3>
+                </div>
+                <div class="icon_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                    </svg>
+                    <p> 10:00 ~ 17:00 (Lunch Time 12:00 ~ 13:30)</p>
+                </div>
+                <div class="icon_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                    </svg>
+                    <p> 토, 일요일 및 공휴일 휴무</p>
+                </div>
+            </div>
+            <div class="f_menu">
+                <h2>
+                    MEMBERSHIP BENEFIT</h2>
+                <p>
+                    공식 온라인 스토어 혜택<br>
+                    무료 시향지 신청
+                </p>
+            </div>
+            <div class="f_menu">
+                <h2>INFO</h2>
+                <p>
+                    주문조회<br>
+                    공지사항<br>
+                    자주묻는 질문<br>
+                    배송 & 교환/반품<br>
+                    이용약관<br>
+                    개인정보 보호정책
+                </p>
+            </div>
+            <div class="f_menu">
+                <h2>CONTACT US</h2>
+                <p>
+                    문의하기<br>
+                    대량구매 문의<br>
+                    고객 센터<br>
+                    매장안내
+                </p>
+            </div>
+            <div class="f_menu">
+                <h2>SOCIAL</h2>
+                <p>
+                    Instagram<br>
+                    Facebook<br>
+                    Pinterest<br>
+                    Kakao<br>
+
+                </p>
+            </div>
+        </div>
+        <div id="f_sub">
+            <p>
+                상호명 : (주)논픽션 / 대표 : 차혜영 / 사업자 등록번호 : 819-87-01383 / 통신판매업신고번호 : 2019-서울용산-1531 / 주소 : 서울시 용산구 대사관로11길
+                20-16 / 전화: 02-790-4096
+            </p>
+            <p>
+                고객센터 : 1666-7891 / 문의 : hello@nonfiction.kr / Wholesale 문의 : wholesale@nonfiction.kr 마케팅/PR 문의 :
+                press@nonfiction.kr/ 개인정보보호책임자 : 차혜영
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
